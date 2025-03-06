@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+    width: 550px;
+    text-align: center;
+}
+
+.display {
+    background-color: #222;
+    color: #0f0;
+    font-size: 4rem;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: right;
+    margin-bottom: 30px;
+    min-height: 55px;
+    word-wrap: break-word;
+    border: 2px solid #444;
+}
+
+#mode-display {
+    font-size: 1rem;
+    color: #ff9800;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#secondary-display {
+    font-size: 2.5rem;
+    color: #0af35c;
+    text-align: right;
+    margin-bottom: 20px;
+}
+#main-display {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 18px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button.operator {
+    background-color: #ff9800;
+}
+
+button.operator:hover {
+    background-color: #e68900;
+}
+
+button.equal {
+    background-color: #4caf50;
+}
+
+button.equal:hover {
+    background-color: #45a049;
+}
+
+button#mode-button {
+    background-color: #673ab7;
+}
+
+button#mode-button:hover {
+    background-color: #512da8;
+}
+.history {
+    margin-top: 20px;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.history:hover {
+    max-height: 500px; /* Adjust this value as needed */
+}
+
+

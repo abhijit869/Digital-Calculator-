@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Casio FX-82ES Plus Replica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="mode-display">Mode: Basic</div>
+            <div id="secondary-display"></div>
+            <input type="text" id="main-display" enabled>
+        </div>
+        <div class="buttons">
+            <button onclick="changeMode()" class="operator">Mode</button>
+            <button onclick="clearDisplay()" class="operator">AC</button>
+            <button onclick="deleteLast()" class="operator">DEL</button>
+            <button onclick="toggleDegreesRadians()" class="operator">Deg/Rad</button>
+            <button onclick="appendToDisplay('/')" class="operator">÷</button>
+            <button onclick="appendToDisplay('**')" class="operator">xʸ</button>
+            <button onclick="handleFunction('mod')">mod</button>
+            
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')" class="operator">×</button>
+            <button onclick="handleFunction('sqrt')">√</button>
+            <button onclick="handleFunction('exp')">eˣ</button>
+            
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" class="operator">−</button>
+            <button onclick="handleFunction('log')">log</button>
+            <button onclick="handleFunction('ln')">ln</button>
+            
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="handleFunction('fact')">n!</button>
+            <button onclick="handleFunction('pi')">π</button>
+            
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculateResult()" class="equal">=</button>
+            <button onclick="handleFunction('sin')">sin</button>
+            <button onclick="handleFunction('cos')">cos</button>
+            <button onclick="handleFunction('tan')">tan</button>
+            
+            <button onclick="memoryFunction('M+')">M+</button>
+            <button onclick="memoryFunction('M-')">M-</button>
+            <button onclick="memoryFunction('MR')">MR</button>
+            <button onclick="memoryFunction('MC')">MC</button>
+            <button onclick="decimalToFraction()">Frac</button>
+            <button onclick="showHistory()">Hist</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
